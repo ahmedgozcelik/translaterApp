@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -11,27 +11,37 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: black;
+    background: black;
 }
 
 .container {
     width: 700px;
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); 
     border-radius: 10px;
     padding: 20px;
 }
 
 .box {
     border-radius: 5px;
-    border: 1px solid #7F8487;
+    border: 1px solid black;
 }
 
-.controls {
+.controls, .controls li, .icons, .icons i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.controls .icons i {
+    width: 40px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .icons {
+    width: 35%;
 }
 
 ul {
@@ -58,7 +68,7 @@ ul {
 
 .box .text-controls {
     display: flex;
-    border: 1px solid #7F8487;
+    border-top: 1px solid #7F8487;
 }
 
 button {
